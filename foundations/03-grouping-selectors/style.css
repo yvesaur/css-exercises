@@ -1,0 +1,15 @@
+
+
+button {
+    font-size: 28px;
+    font-family: 'Times New Roman', Helvetica, serif;
+}
+
+.one {
+    background-color: black;
+    color: white;
+}
+
+.two {
+    background-color: yellow;
+}
