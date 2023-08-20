@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
 }
@@ -20,15 +21,15 @@ body, html {
 }
 
 .header {
-  background-color: #FFDE22;
+  background-color: #ffde22;
 }
 
 .sidebar {
-  background-color: #FF7755;
+  background-color: #ff7755;
 }
 
 .nav {
-  background-color: #00DDFF;
+  background-color: #00ddff;
 }
 
 .article {
@@ -44,4 +45,72 @@ body, html {
 
 .footer {
   background-color: #393f4d;
+}
+
+/* .container {
+  display: grid;
+  grid-template: repeat(4, 1fr), repeat(7, 1fr);
+  grid-template-areas:
+    "header header header header"
+    "sidebar nav nav nav"
+    "sidebar article article article"
+    "sidebar article article article"
+    "sidebar article article article"
+    "sidebar article article article"
+    "footer footer footer footer";
+
+  gap: 15px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.article {
+  grid-area: article;
+  overflow: auto;
+}
+
+.footer {
+  grid-area: footer;
+} */
+
+.container {
+  display: grid;
+  grid-template: 1fr 1fr 6fr 1fr / 1fr 2fr;
+  grid-template-areas:
+    "header header"
+    "sidebar nav"
+    "sidebar article"
+    "footer footer";
+
+  gap: 15px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.article {
+  grid-area: article;
+}
+
+.footer {
+  grid-area: footer;
 }
